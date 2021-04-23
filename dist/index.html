@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Project</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<nav></nav>
+<header>
+    <button id="trend" class="nav-link" data-page="trending">Trending Gifs</button>
+    <button id="favorites" class="nav-link" data-page="favorites">Favorites Gifs</button>
+        <div id="logo_position" >
+            <img src="utilities/pictures/logo2.png" class="nav-link" data-page="home" id="header_logo">
+        </div>
+    
+        <div id = "search_area_header">
+            <div id="search_bar_header">
+                <input type="text" id="search_header" placeholder="Search">
+                <button class="zoom_navigation" type="submit" id="zoom_button">🔎</button>
+            </div>
+            <br>
+            <div id="results_preview_header"></div>
+            <div id="results_button_header">
+                <button class="zoom_navigation" type="submit" id="more_results_header">View more results</button>
+            </div>
+        </div>
+    <button id="uploads" class="nav-link" data-page="uploads">Uploads</button>
+</header>
+</nav>
+
+<body >
+    <div id="zoom_page" class="modal" style="position: absolute">
+    </div>
+    <div id="content_body">
+    </div>
+    <script src="index.js" type="module"></script>
+</body>
+</html>
