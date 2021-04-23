@@ -1,0 +1,521 @@
+body {
+    background: #16191b;
+    font-family: 'Roboto', sans-serif;
+    color: #56956b; 
+  }
+
+input:not(.favorite_check){
+    font-size: 1vw;
+    background-color: rgb(233, 233, 233);
+    border: none;
+    height: inherit;
+    flex-grow: 2;
+}
+  
+  header {
+    padding: 1vw;
+    padding-bottom: 0;
+    margin-bottom:2vw;
+    display: flex;
+    background-color: #2a3840;
+    height: 5vw;
+    position: relative;
+    background-size: cover;
+  }
+  
+  button#zoom_button{
+    width: 2.5vw;
+    font-size: 1vw;
+    border: 0.1vw solid blue;
+    background:rgb(77, 77, 201);
+
+    color:white;
+    padding-bottom: 1.35vw;
+  }
+  button#zoom_button:hover {
+        background-color: hotpink;
+  }
+
+  div#search_bar {
+    display: flex;
+    flex-direction: row;
+    height: 1.5vw;
+    width: 32vw;
+    margin-top: -6vw;
+    border-top-width: 0.2vw;
+    border-bottom-width: 0.2vw ;
+    border-color: gray;
+  }
+
+#logo {
+    width: 19vw;
+    height: 18vw;
+    margin-left: 38.7vw;
+    margin-top: -15vw;
+    margin-bottom: 7vw;
+}
+  
+.nav-link:not(#header_logo){
+    background-color: #2a3840;
+    color: #D1DBBD;
+    font-weight: bold;
+    border: black solid 1px;
+    padding-top: 1vw 0 1vw;
+    width: 200px;
+    height: 45px;
+    transition-duration: 0.4s;
+    border-radius: 5px;
+    margin-top: 0.8vw;
+}
+
+.nav-link:not(#header_logo):hover{
+    cursor: pointer;
+    background-color: #56956b;
+    color:white;
+}
+
+#home {
+    margin-top: 18vw;
+}
+
+button#trend{
+    font-size: 1vw;
+    margin-right: 2vw;
+}
+
+button#favorites{
+    font-size: 1vw;
+}
+
+button#uploads{
+    margin-left: 65vw;
+    font-size: 1vw;
+}
+
+#logo_position {
+    position: absolute;
+    margin-top: -0.3vw;
+    margin-left: 35vw;
+    z-index: 1;
+}
+#header_logo {
+    display: none;  
+    height: 5vw;
+} 
+
+#header_logo:hover {
+    cursor: pointer;    
+}
+
+/**-------------------DETAILED VIEW------------*/
+
+.detailed_view:not(.gif_template img){
+    margin-top: 5vw;
+    margin: auto;
+    width: 50%;
+}
+
+
+.detailed_view:not(.gif_template img){
+    display: flex;
+    border: 1px solid rgb(48, 48, 48);
+    background-color: #1d2022;
+}
+
+.detailed_view .gif_info:not(#img){
+    margin:2vw 2vw;
+}
+
+.gif_info div{
+    margin-bottom: 2vw;
+}
+
+.detailed_view_form{
+    font-size: 1.3vw;
+    font-weight: bold;
+    color: #3E606F;
+}
+
+.detailed_view_data{
+    font-size: 1.2vw;
+}
+
+a {
+    font-size: 1.3vw;
+    color:#3E606F;
+    text-decoration: none;
+}
+
+a:hover{
+    color:#acbb90;
+    text-decoration: underline;
+}
+
+.random_gifs{
+    display: flex;
+    margin:auto;
+	justify-content: center;
+	align-items: center;
+}
+
+.detailed_view:not(.gif_template) img {
+    margin-left: 0.6vw;
+    align-self: center;
+    width: 17vw;
+    height: 17vw;
+}
+
+h2{
+    margin-top: 3vw;
+    margin-left: 5vw;
+}
+.random_gifs .singleGif-box{
+    margin-left: 5vw
+}
+.random_gifs .singleGif-box img{
+    height: 12vw;
+    width: 10vw;
+}
+.random_gifs .singleGif-box img:hover{
+    cursor: pointer;
+    border-style: solid 0.5vw;
+    border-color: #acbb90;
+}
+
+.random_gifs .singleGif-box .favorites span{
+    text-align: center;
+}
+/**------------------singleGif TEMPLATE ---------------*/
+
+.inner_info {
+    margin-top: 0.35vw;
+}
+.inner_info:hover {
+    cursor: pointer;
+    color: #fff56c;
+}
+/**-------------------SAMPLE SEARCH------------*/
+#no_results {
+    color: rgb(59, 59, 59);
+    margin-left: 1vw;
+    margin-top:0.2vw;
+}
+#search_bar {
+    border: solid;
+    border-color: grey;
+}
+div#search_area{
+    margin-left: 32vw;
+    width: 32vw;
+}
+
+div#results_preview {
+    display: flex;
+    justify-content: center;
+    width: inherit;
+    height: 10vw;
+    background-color: white;
+    border-style: outset;
+    border-color: rgb(196, 196, 196);
+}
+/**------------------------GIF TEMPLATE FOR SAMPLE SEARCH---------------*/
+.gif_template .favorite_check{
+
+}
+.gif_template img:hover {
+    cursor: pointer;
+}
+/*
+.gif_template img:hover .tooltip_text{
+    z-index: 3;
+    position: relative;
+    color: hotpink;
+    height: 100vw;
+    width: 100vw;
+    visibility: visible;
+}*/
+
+.gif_template{
+    margin-bottom: 0;
+}
+.gif_template {
+    padding: 0.3vw;
+    margin-left: 0.3vw;
+    margin-right: 0.3vw;
+    border-style: solid;
+    border-color: rgba(219, 219, 219, 0.541);
+}
+.gif_template:hover{
+    border-color: rgba(214, 181, 181, 0.836);
+    background-color: rgb(207, 207, 207);
+    color: white;
+}
+#more_results{
+    margin-left: 12.2vw;
+}
+/* --------------------------------NAVIGATION SEARCH-------------------------*/
+div#search_bar_header {
+    display: flex;
+    height: 2vw;
+    width: 32vw;
+    margin-top: 0.2vw;
+    border-style: solid;
+    border-top-width: 0.2vw;
+    border-bottom-width: 0.3vw ;
+    border-color: gray;
+}
+#search_area_header {
+    z-index: 1;
+    flex-direction: column;
+    height: 14vw;
+    position:absolute;
+    margin-left: 45vw;
+    margin-right: 2vw;
+
+}
+#results_preview_header {
+    margin-top: -1.3vw;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    background-color: white;
+    border-style: solid;
+    border-color: gray;
+}
+#more_results_header {
+    border-bottom: solid gray;
+    border-right: solid gray;
+    border-left: solid gray;
+
+    margin-left: 12.2vw;
+}
+#more_results_header:hover {
+    background-color: gray;
+    color: honeydew;
+}
+/*-------- TRENDING VIEW -----------*/
+
+.trending{
+    margin: 0 50px 0 50px;
+    background:#2a3840;
+}
+
+.trending h1{
+    padding: 20px;
+}
+.trending #grid .singleGif-box{
+    margin-bottom: 1vw;
+}
+
+#grid {
+    display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-gap: 1.5vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    overflow: hidden; 
+    text-align: center;
+}
+
+#grid .singleGif span{
+    background-color: black;
+    display:inline-block;
+
+}
+
+#grid img{
+	display: flex;
+    flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    width: 100%;
+    height: 10vw;
+    border: solid 0.15vw black;
+    position: relative;
+}
+
+#grid img:hover{
+    transform: scale(1.1);
+    transition: transform .8s ease;
+    cursor: zoom-in;
+}
+
+#grid h1{
+    position: relative;
+    color: #56956b;
+}
+
+/* That's the zoom window-------------------------ZOOM SEARCH ----------*/
+.modal {
+    display: none;
+    margin-left: -1vw;
+    margin-top: -9vw;
+    width: 100.2vw;
+    height: 45.30vw;
+    background-color: rgba(0, 0, 0, 0.459);
+    z-index: 5;
+    overflow: hidden;
+}
+.zoom_content {
+    z-index: 6;
+    position: relative;
+    background-color: white;
+    margin-top: 3vw;
+    margin-left: 6vw;
+    width: 88vw;
+    height: 40vw;
+    border: solid#193441 0.2vw;
+    /**
+    animation: 0.5s zoomPopup ;
+    **/
+}
+.zoom_content #grid {
+    margin-top: 1.5vw;
+}
+/**
+@keyframes zoomPopup {
+    from{ 
+        margin-left: 47.5vw;
+        margin-top: 29vw;
+        width: 3vw;
+        height: 1.5vw;
+        }
+}
+
+@keyframes zoomHeaderPopup {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+*/
+#zoom_header {
+    background-color: #3e606f;
+    border: solid #193441 0.2vw;
+    width: 87.7vw;
+    height: 6vw;
+    flex-direction: row;
+    /**
+    animation: 2.5s zoomHeaderPopup ;
+    **/
+}
+#zoom_header h1 {
+    white-space: nowrap;
+    margin-left: 33vw;
+    position: absolute;
+}
+.close{
+    margin-top: -1.2vw;
+    margin-left: 84vw;
+    font-size: 5vw;
+    position: absolute;
+}
+.close:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.modal .buttons_pagination {
+    margin-top: -0.6vw;
+}
+
+.modal .buttons_pagination .previous_page1 {
+    margin-right: 3vw;
+}
+
+.modal .favorite:hover{
+    color: red;
+}
+/*------------------------PAGINATION CSS-------------------------*/
+.buttons_pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: inherit;
+    margin-top: 2vw;
+}
+.buttons_pagination p {
+    font-size: 1.3vw;
+    margin-right: 3vw;
+    border: solid #193441;
+    background-color: #3e606f;
+    color: honeydew;
+}
+.previous_page {
+    margin-right: 3vw;
+}
+.buttons_pagination button{
+    width: 5vw;
+    height: 3vw;
+    border: solid #193441;
+    background-color: #3e606f;
+    color: white;
+}
+.buttons_pagination button:hover{
+    cursor: pointer;
+    border: solid #193441;
+    background-color: #568599;
+    color: white;
+}
+
+div.pagination {
+    border-style: ridge;
+    border-color: gray;
+    background-color: rgba(52, 52, 170, 0.733);
+}
+
+/*-------- UPLOAD VIEW -----------*/
+
+#registerUpload{
+    margin-top: 6vw;
+    padding: 2vw;
+    height: 28vw;
+    width: 20vw;
+    background-color: #2a3840;
+    margin-left: 4vw;
+}   
+
+#registerUpload .upload_form {
+    padding: 1.3vw;
+}
+
+.form-label{
+    font-size:1.15vw;
+    font-weight: bold;
+}
+
+#registerUpload input{
+    margin-top: 0.5vw;
+    width: 16.5vw;
+    height: 1.5vw;
+}
+
+#submit_btn{
+    background-color: #2a3840;
+    color: #D1DBBD;
+    font-size: 1.2vw;
+    font-weight: bold;
+    border: #D1DBBD solid 1px;
+    width: 7vw;
+    height: 2.2vw;
+    margin-left: 1.4vw;
+    transition-duration: 0.4s;
+    border-radius: 5px;
+    margin-top: 1vw;
+}
+
+#submit_btn:hover{
+    cursor: pointer;
+    background-color: #56956b;
+    color:white;
+}
+
+/*-------- FAVORITES VIEW -----------*/
+
+#content_body #grid  p{
+    font-size: 1.5vw;
+}
+
+/*------------------------ANIMATIONS ------------------*/
