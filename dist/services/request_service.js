@@ -2,7 +2,7 @@ import {DATA_KEY} from '../utilities/constants.js'
 import { gif_template } from '../views/gif_icon_template_view.js'
 
 export const trendingGifs = async (offset) => {
-    const res = await fetch(`http://api.giphy.com/v1/gifs/trending?api_key=${DATA_KEY}&limit=18&offset=${offset}`);
+    const res = await fetch(`https://api.giphy.com/v1/gifs/trending?api_key=${DATA_KEY}&limit=18&offset=${offset}`);
     const jsonRes = await res.json();
     return jsonRes.data;
 }
